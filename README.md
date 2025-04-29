@@ -1,3 +1,5 @@
-# mini_market
+# flutter_mini_ecommerce
 
-A new Flutter project.
+A mini e-commerce app built with Flutter and Dart, using GetX for state management and fetching product data from a fake API.
+
+
