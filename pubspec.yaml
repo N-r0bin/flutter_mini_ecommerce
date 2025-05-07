@@ -16,6 +16,7 @@ dependencies:
 
   iconsax: ^0.0.8
   readmore: ^3.0.0
+  collection: ^1.17.0
   
 
 dev_dependencies:

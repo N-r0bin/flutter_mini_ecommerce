@@ -19,12 +19,11 @@ class CartController extends GetxController {
     final index = cartItems.indexWhere((item) => item.product.id == product.id);
 
     if (index >= 0) {
-      cartItems[index].quantity++;
+      Get.snackbar('Already in Cart', '${product.title} is already added.');
     } else {
       cartItems.add(CartItemModel(product: product));
+      Get.snackbar('Added to Cart', '${product.title} added to your cart');
     }
-
-    Get.snackbar('Added to Cart', '${product.title} added successfully');
   }
 
   void removeFromCart(ProductModel product) {
